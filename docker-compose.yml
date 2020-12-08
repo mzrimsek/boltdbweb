@@ -1,0 +1,12 @@
+version: '2'
+
+services:
+  web:
+    image: ghcr.io/mzrimsek/boltdbweb:latest
+    container_name: boltdbweb
+    ports:
+      - $HOST_PORT:8080
+    volumes:
+      - $DB_FILE:/database.db
+    restart: unless-stopped
+    

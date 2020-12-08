@@ -3,6 +3,13 @@ A simple web based boltdb GUI Admin panel.
 
 ## Docker
 
+The easiest way to get the container running is with docker-compose - a basic example can be found [here](https://github.com/mzrimsek/boltdbweb/blob/master/docker-compose.yml).
+
+Make a .env and add the following variables:
+
+* HOST_PORT: The port that will bind to the exposed port in the container
+* DB_FILE: The path to the database file to be displayed in in the browser
+
 ### Development
 
 Simply clone the repository and build the image
