@@ -10,6 +10,10 @@ Make a .env and add the following variables:
 * HOST_PORT: The port that will bind to the exposed port in the container
 * DB_FILE: The path to the database file to be displayed in in the browser
 
+Then start the container
+
+```docker-compose --env-file .env up -d```
+
 ### Development
 
 Simply clone the repository and build the image
