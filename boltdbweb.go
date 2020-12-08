@@ -1,7 +1,7 @@
 //
 // boltdbweb is a webserver base GUI for interacting with BoltDB databases.
 //
-// For authorship see https://github.com/evnix/boltdbweb
+// For authorship see https://github.com/mzrimsek/boltdbweb
 // MIT license is included in repository
 //
 package main
@@ -15,7 +15,7 @@ import (
 	"path"
 	"time"
 
-	"github.com/evnix/boltdbweb/web"
+	"github.com/mzrimsek/boltdbweb/web"
 	"github.com/gin-gonic/gin"
 
 	log "github.com/sirupsen/logrus"

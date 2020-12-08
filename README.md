@@ -1,13 +1,26 @@
 # boltdbweb
 A simple web based boltdb GUI Admin panel.
 
+## Docker
 
-##### Installation
+### Development
+
+Simply clone the repository and build the image
+
+```docker build --tag boltdbweb .```
+
+And then run the image
+
+```docker run -d -p 8080:8080 -v /mydb.db:/database.db boltdbweb```
+
+If everything went well you should now be running on http://localhost:8080
+
+## Manual Installation
 ```
-go get github.com/evnix/boltdbweb
+go get github.com/mzrimsek/boltdbweb
 ```
 
-##### Usage
+### Usage
 ```
 boltdbweb --db-name=<DBfilename>[required] --port=<port>[optional] --static-path=<static-path>[optional]
 ```
@@ -17,16 +30,16 @@ boltdbweb --db-name=<DBfilename>[required] --port=<port>[optional] --static-path
 - `--static-path:` If you moved the binary to different folder you can determin the path of the `web` folder. (Default: Same folder where the binary is located.)
 
 
-##### Example
+#### Example
 ```
 boltdbweb --db-name=test.db --port=8089 --static-path=/home/user/github/boltdbweb
 ```
 Goto: http://localhost:8089
 
-##### Screenshots:
+#### Screenshots:
 
-![](https://github.com/evnix/boltdbweb/blob/master/screenshots/1.png?raw=true)
+![](https://github.com/mzrimsek/boltdbweb/blob/master/screenshots/1.png?raw=true)
 
-![](https://github.com/evnix/boltdbweb/blob/master/screenshots/2.png?raw=true)
+![](https://github.com/mzrimsek/boltdbweb/blob/master/screenshots/2.png?raw=true)
 
-![](https://github.com/evnix/boltdbweb/blob/master/screenshots/3.png?raw=true)
+![](https://github.com/mzrimsek/boltdbweb/blob/master/screenshots/3.png?raw=true)
